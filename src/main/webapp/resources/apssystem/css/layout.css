@@ -1,5 +1,5 @@
 /* TOPBAR */
-.aw-topbar {
+.top {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -10,9 +10,10 @@
 	background-color: #1e94d2;
 }
 
-.aw-topbar > img {
-	margin-top: 10px;
+.top > img {
+	margin-top: 8px;
 	margin-left: 5px;
+	height: 38px;
 }
 
 /* SIDEBAR */
@@ -34,5 +35,17 @@
 @media (min-width: 960px) {
 	.aw-sidebar {
 		margin-left: 0px;
+	}
+}
+
+/* CONTENT */
+.aw-content {
+	margin-top: 50px;
+	transition: margin-left 0.5s;
+}
+
+@media (min-width: 960px) {
+	.aw-content {
+		margin-left: 210px;
 	}
 }
