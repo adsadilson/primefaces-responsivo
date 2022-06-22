@@ -1,5 +1,5 @@
 /* TOPBAR */
-.top {
+.aw-topbar {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -10,14 +10,10 @@
 	background-color: #1e94d2;
 }
 
-.top > img {
-	margin-top: 8px;
+.aw-topbar > img {
+	margin-top: 10px;
 	margin-left: 5px;
 	height: 38px;
-}
-
-.aw-sidebar.is-toggled {
-	margin-left: 0px;
 }
 
 /* SIDEBAR */
@@ -36,6 +32,10 @@
 	border-right: 1px solid #eaeaea;
 }
 
+.aw-sidebar.is-toggled {
+	margin-left: 0px;
+}
+
 @media (min-width: 960px) {
 	.aw-sidebar {
 		margin-left: 0px;
@@ -48,6 +48,7 @@
 
 /* CONTENT */
 .aw-content {
+	padding: 0 15px;
 	margin-top: 50px;
 	transition: margin-left 0.5s;
 }
