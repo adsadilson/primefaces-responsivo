@@ -23,7 +23,7 @@
 
 			<p:dataTable value="#{clientesManager.clientes}" var="cliente"
 				selectionMode="single" selection="#{clientesManager.clienteEdicao}"
-				rowKey="#{cliente.cpf}" style="margin-top: 20px">
+				rowKey="#{cliente.cpf}" reflow="true" style="margin-top: 20px">
 
 				<p:column headerText="Nome">
 					<h:outputText value="#{cliente.nome}" />
