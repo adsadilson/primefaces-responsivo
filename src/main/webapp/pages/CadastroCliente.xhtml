@@ -57,7 +57,8 @@
 					</p:tab>
 
 					<p:tab title="Endereços">
-						<p:commandButton value="Novo endereço" style="width: auto" />
+						<p:commandButton value="Novo endereço" style="width: auto"
+							oncomplete="PF('novoEnderecoDialog').show()" />
 
 						<p:dataTable value="#{clientesManager.clienteEdicao.enderecos}"
 							var="endereco"
@@ -83,6 +84,33 @@
 					</p:tab>
 				</p:tabView>
 			</div>
+
+			<p:dialog widgetVar="novoEnderecoDialog" id="novoEnderecoDialog"
+				modal="true" header="Novo endereço" resizable="false" responsive="true">
+
+				<div class="ui-fluid">
+					<p:panelGrid columns="2" layout="grid"
+						styleClass="panelgrid-noborder"
+						columnClasses="ui-grid-col-4, ui-grid-col-8">
+						<p:outputLabel value="Logradouro" for="logradouro" />
+						<p:inputText id="logradouro" required="true" />
+
+						<p:outputLabel value="Número" for="numero" />
+						<p:inputText id="numero" required="true" />
+
+						<p:outputLabel value="Bairro" for="bairro" />
+						<p:inputText id="bairro" />
+
+						<p:outputLabel value="Cidade" for="cidade" />
+						<p:inputText id="cidade" />
+
+						<p:outputLabel />
+						<p:commandButton value="Adicionar" />
+					</p:panelGrid>
+				</div>
+
+			</p:dialog>
+
 		</h:form>
 	</ui:define>
 
