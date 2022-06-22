@@ -16,6 +16,10 @@
 	height: 38px;
 }
 
+.aw-sidebar.is-toggled {
+	margin-left: 0px;
+}
+
 /* SIDEBAR */
 .aw-sidebar {
 	position: fixed;
@@ -36,6 +40,10 @@
 	.aw-sidebar {
 		margin-left: 0px;
 	}
+	
+	.aw-sidebar.is-toggled {
+		margin-left: -211px;
+	}
 }
 
 /* CONTENT */
@@ -47,5 +55,9 @@
 @media (min-width: 960px) {
 	.aw-content {
 		margin-left: 210px;
+	}
+	
+	.aw-content.is-toggled {
+		margin-left: 0;
 	}
 }

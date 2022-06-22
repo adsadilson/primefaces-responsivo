@@ -10,21 +10,24 @@
 	</f:facet>
 	<title>Apssystem</title>
 	<h:outputStylesheet library="apssystem" name="css/layout.css" />
+	<h:outputScript target="body" library="primefaces" name="jquery/jquery.js" />
+	<h:outputStylesheet library="apssystem" name="css/components.css" />
+	<h:outputScript target="body" library="apssystem" name="javascripts/app.js" />
 </h:head>
 
 <h:body>
 
 	<header class="top">
 		<h:graphicImage library="apssystem" name="images/logo2.png" />
+		<a href="#" class="aw-toggle  js-toggle"><i class="fa  fa-bars"></i></a>
 	</header>
-	
-	<aside class="aw-sidebar">
-	</aside>
-	
-	<section class="aw-content">
+
+	<aside class="aw-sidebar js-sidebar"></aside>
+
+	<section class="aw-content js-content">
 		<h1>Conteúdo</h1>
 	</section>
-	
+
 </h:body>
 
 </html>
