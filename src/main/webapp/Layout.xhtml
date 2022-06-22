@@ -10,8 +10,9 @@
 	</f:facet>
 	<title>Apssystem</title>
 	<h:outputStylesheet library="apssystem" name="css/layout.css" />
-	<h:outputScript target="body" library="primefaces" name="jquery/jquery.js" />
+	<h:outputStylesheet library="apssystem" name="css/custom.css" />
 	<h:outputStylesheet library="apssystem" name="css/components.css" />
+	<h:outputScript target="body" library="primefaces" name="jquery/jquery.js" />
 	<h:outputScript target="body" library="apssystem" name="javascripts/app.js" />
 </h:head>
 
@@ -22,7 +23,25 @@
 		<a href="#" class="aw-toggle  js-toggle"><i class="fa  fa-bars"></i></a>
 	</header>
 
-	<aside class="aw-sidebar js-sidebar"></aside>
+	<aside class="aw-sidebar js-sidebar">
+		<nav class="aw-menu">
+			<ul>
+				<li>
+					<h:link><i class="fa  fa-fw  fa-home"></i>Dashboard</h:link>
+				</li>
+				<li class="is-selected">
+					<h:link><i class="fa  fa-fw  fa-user"></i>Clientes</h:link>
+				</li>
+				<li>
+					<h:link><i class="fa  fa-fw  fa-file-text"></i>Relatórios</h:link>
+				</li>
+				<li>
+					<h:link><i class="fa  fa-fw  fa-cog"></i>Configurações</h:link>
+				</li>
+			</ul>
+		</nav>
+		
+	</aside>
 
 	<section class="aw-content js-content">
 		<h1>Conteúdo</h1>
